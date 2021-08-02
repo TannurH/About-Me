@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onunload="myFunction()">
+    
+    <h1 id="title" onmouseover="mouseOver()"> Hello! I am Tannur Hossain </h1>
+    <p> 
+      I am a senior in New Utrecht High School. I live in Brooklyn, New York. I plan to major in computer science.
+    </p>
+
+    <p id="more text" onclick="textClicked()"> Click for more </p>
+    <script>
+      function textClicked(){
+        document.getElementById("more text").innerHTML =  "I got interested coding when I had Web design class. We learned HTML and CSS. It was an enjoyable experience."
+      }
+
+      function mouseOver() {
+        document.getElementById("title").style.fontSize = "34px";
+      }
+
+      function myFunction() {
+        alert ("Thank you for visiting the website!");
+      }
+    </script>
+    
+    <h3> Fun Facts About Me </h3>
+    <ul> 
+      <li> I can speak 4 languages. </li>
+      <li> Playing chess is a hobby of mine although I am not very good at it. </li>
+      <li> If I had the choice to keep any animal as a pet, it would be a Cheetah.  </li>
+      <li> My favorite cartoon show as a kid was Phineas and Ferb. </li>
+    </ul>
+
+    
+    
+  </body>
+</html>
